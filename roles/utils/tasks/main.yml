@@ -6,6 +6,7 @@
   copy:
     src: "{{ allspark_root_directory }}/data/secrets/admin_password.txt"
     dest: "{{ allspark_root_directory }}/data/secrets/portainer_password.txt"
+    remote_src: yes
 
 - name: Setup Portainer as infra service
   docker_container:
